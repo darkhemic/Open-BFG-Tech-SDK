@@ -3,7 +3,7 @@ Open-BFG-Tech
 
 Open-Big-Free-Game-Tech - set of scripts to download and build Open-BFG-Engine and Open-BFG-Editor
 
-The Open-BFG-Tech is a set of scripts intended to help download the Open-BFG-Engine and Open-BFG-Editor along with the needed dependencies on to build and run both projects without issues on any linux distro. 
+The Open-BFG-Tech is a set of scripts intended to help download the Open-BFG-Engine and Open-BFG-Editor and other tools along with the needed dependencies on to build and run both projects without issues on any linux distro. This is done in an effort to start making the Doom3-BFG engine easier to use and more user friendly in the future.
 
 The Open-BFG-Engine is based on https://github.com/RobertBeckebans/RBDOOM-3-BFG a fork of the Doom3-BFG source code 
 
