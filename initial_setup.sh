@@ -3,8 +3,20 @@
 #This script downloads the needed tools to download the Open-BFG-Tech set of applications run this script as root.
 #
 #
+#========================================================================
+#
+# declarations
+#
+#========================================================================
+
 GAME_TECH_VERSION="Open-BFG-Tech SDK"
-DEFAULT_PACKAGES="gcc git wget cmake"
+DEFAULT_PACKAGES="gcc git wget cmake unzip"
+
+#========================================================================
+#
+# install packages
+#
+#========================================================================
 
 echo "=============================================="
 echo "   Please Make Sure You are running as root   "

@@ -26,4 +26,4 @@ Step 2. run initial_setup.sh as the root user. This can be done in a terminal co
 
 *** the initial_setup.sh installs packages directly to your system which will be needed (and you may already have installed) to use the Open-BFG-Tech-SDK; packages like gcc, git and cmake just to name a few.
 
-Step 3. 
+Step 3. start new terminal as your normal user and run ./first_install.sh
