@@ -3,7 +3,7 @@
 #This script downloads the needed tools to download the Open-BFG-Tech set of applications run this script as root.
 #
 #
-GAME_ENGINE_VERSION="Open-BFG-Tech SDK"
+GAME_TECH_VERSION="Open-BFG-Tech SDK"
 DEFAULT_PACKAGES="gcc git wget cmake"
 
 echo "=============================================="
@@ -36,7 +36,7 @@ echo "    3) neither of these"
 	fi
 	echo "thank you"
 	echo "Initial Setup Script Has Finished."
-	echo "You now have the needed packages installed to continue using the "${GAME_ENGINE_VERSION}	
+	echo "You now have the needed packages installed to continue using the "${GAME_TECH_VERSION}	
 
 
 		
