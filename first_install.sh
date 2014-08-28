@@ -24,9 +24,10 @@ echo "Let's move to your base home directory"
 cd
 echo "Making " ${GAME_TECH_VERSION} "Directory in your home directory" 
 mkdir ${GAME_TECH_VERSION}
+echo "Now Moving into "${GAME_TECH_VERSION}
+cd $GAME_TECH_VERSION
 echo "Now we are going to create a github clone of the" ${GAME_TECH_VERSION}"-SDK."
 echo "This will make it easier to stay up-to-date"
-cd ${GAME_TECH_VERISON}
 echo "cloning github "${GAME_TECH_VERSION}"-SDK now"
 git clone ${GAME_TECH_SDK_GIT}
 echo "cloning github "${GAME_TECH_ENGINE_VERSION}" now."
