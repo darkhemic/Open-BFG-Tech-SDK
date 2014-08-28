@@ -24,30 +24,6 @@ GAME_TECH_EDITOR_GIT="https://github.com/darkhemic/Open-BFG-Editor.git"
 
 cd
 cd $GAME_TECH_VERSION
-cd $GAME_TECH_VERSION"-SDK"
-git status -s
-git fetch
-git pull origin master
-git merge master
-
-cd
-cd $GAME_TECH_VERSION
-cd $GAME_TECH_ENGINE_VERSION
-git status -s
-git fetch
-git pull origin master
-git merge master
-
-cd
-cd $GAME_TECH_VERSION
-cd $GAME_TECH_EDITOR_VERSION
-git status -s
-git fetch
-git pull origin master
-git merge master
-
-cd
-cd $GAME_TECH_VERSION
 cp ${GAME_TECH_VERSION}-SDK/copy_to_master_directory.sh copy_to_master_directory.sh
-./copy_to_master_directory.sh 
-
+cp ${GAME_TECH_VERSION}-SDK/install_libraries.sh install_libraries.sh
+cp ${GAME_TECH_VERSION}-SDK/update_from_git.sh update_from_git.sh
