@@ -33,13 +33,20 @@ mkdir linux
 mkdir windows
 mkdir macosx
 
-echo "Downloading and setting up SDL2."
+echo "Downloading LibAV"
+git clone git://git.libav.org/libav.git
+ 
+echo "Downloading OpenAL Soft"
+wget http://kcat.strangesoft.net/openal-releases/openal-soft-1.16.0.tar.bz2
+
+echo "Downloading SDL2."
 wget https://www.libsdl.org/release/SDL2-2.0.3.zip
-unzip SDL2-2.0.3.zip
-./SDL2-2.0.3/configure
-make
-make install --prefix=$INSTALL_PREFIX 
-make clean
+
+#unzip SDL2-2.0.3.zip
+#./SDL2-2.0.3/configure
+#make
+#make install --prefix=$INSTALL_PREFIX 
+#make clean
 #rm config.log
 #rm config.status
 #rm libtool

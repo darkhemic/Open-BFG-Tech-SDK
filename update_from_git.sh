@@ -46,8 +46,4 @@ git fetch
 git pull origin master
 git merge master
 
-cd
-cd $GAME_TECH_VERSION
-cp ${GAME_TECH_VERSION}-SDK/copy_to_master_directory.sh copy_to_master_directory.sh
-./copy_to_master_directory.sh 
 
