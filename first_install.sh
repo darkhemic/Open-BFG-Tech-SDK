@@ -15,6 +15,7 @@ GAME_TECH_ENGINE_VERSION="Open-BFG-Engine"
 GAME_TECH_ENGINE_GIT="https://github.com/darkhemic/Open-BFG-Engine.git"
 GAME_TECH_EDITOR_VERSION="Open-BFG-Editor"
 GAME_TECH_EDITOR_GIT="https://github.com/darkhemic/Open-BFG-Editor.git"
+INSTALL_LIBRARIES=
 
 #========================================================================
 #
@@ -36,10 +37,20 @@ echo "cloning github "${GAME_TECH_ENGINE_VERSION}" now."
 git clone ${GAME_TECH_ENGINE_GIT}
 echo "cloning github "${GAME_TECH_EDITOR_VERSION}" now."
 git clone ${GAME_TECH_EDITOR_GIT}
-cd
-cd $GAME_TECH_VERSION
-cp ${GAME_TECH_VERSION}-SDK/copy_to_master_directory.sh copy_to_master_directory.sh
-./copy_to_master_directory.sh 
+
+echo "Would you like to install the libraries needed to build both the Engine and Editor now?"
+echo ""
+echo "This can be done later by running ./install_libraries.sh."
+echo ""
+read -p "y/N : default is no. " response 
+	if [ "${response}" = 'y'|| "${response}" = 'Y' ]; then 
+	cd
+	cd $GAME_TECH_VERSION
+	cd $GAME_TECH_VERSION"-SDK"
+	./install_libraries.sh
+	fi
+
+echo "The ./first_install.sh is complete."
 
 
 

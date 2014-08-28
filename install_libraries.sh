@@ -10,7 +10,7 @@
 #========================================================================
 GAME_TECH_VERSION="Open-BFG-Tech"
 LIBRARY=lib
-INSTALL_PREFIX=~/${GAME_TECH_VERSION/${LIBRARY}
+INSTALL_PREFIX=~/${GAME_TECH_VERSION}/${LIBRARY}
 #SYSTEM is created to later build in cross-compiling features
 SYSTEM=linux
 INSTALL_LIBRARY=${INSTALL_PREFIX}/${SYSTEM}
@@ -21,6 +21,8 @@ INSTALL_LIBRARY=${INSTALL_PREFIX}/${SYSTEM}
 #========================================================================
 
 echo "We are going to install all library files in " ${LIBRARY} " which in this master directory."
+cd
+cd $GAME_TECH_VERSION
 mkdir ${LIBRARY}
 echo "Now Moving into "${LIBRARY}
 cd $LIBRARY
