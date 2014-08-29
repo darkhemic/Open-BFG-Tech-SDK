@@ -48,11 +48,11 @@ Option two - in your home directory you create the Open-BFG-Tech folder and clon
 Step 2. 
 Please run initial_setup.sh as the root user. 
 
-sudo ./initial_setup.sh
- or
-su -
-cd /path/to/the/file/
-./initial_setup.sh
+	sudo ./initial_setup.sh
+	 or
+	su -
+	cd /path/to/the/file/
+	./initial_setup.sh
 
 This depends on the linux distro you are running.
 
