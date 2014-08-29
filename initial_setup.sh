@@ -10,7 +10,7 @@
 #========================================================================
 
 GAME_TECH_VERSION="Open-BFG-Tech SDK"
-DEFAULT_PACKAGES="gcc git wget cmake unzip"
+DEFAULT_PACKAGES="gcc git wget cmake unzip yasm tar"
 
 #========================================================================
 #
