@@ -20,7 +20,7 @@ Setup
 
 ==============================
 
-Step 1. download github repo zipfile and uncompress
+Step 1. download initial_setup.sh and first_install.sh repo zipfile and uncompress
 
 Step 2. run initial_setup.sh as the root user. This can be done in a terminal command line using the command sudo ./initial_setup.sh or su - and then navigating back to your home directory and into the Open-BFG-Tech-SDK folder.
 

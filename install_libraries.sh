@@ -9,14 +9,15 @@
 #
 #========================================================================
 GAME_TECH_VERSION="Open-BFG-Tech"
-LIBRARY=lib
+LIBRARY="lib"
 INSTALL_PREFIX=~/${GAME_TECH_VERSION}/${LIBRARY}
 #SYSTEM is created to later build in cross-compiling features
-SYSTEM=linux
+TEMP="TEMP"
+SYSTEM="linux"
 INSTALL_LIBRARY=${INSTALL_PREFIX}/${SYSTEM}
 #========================================================================
 #
-# install libraries
+# Downloading libraries
 #
 #========================================================================
 
@@ -29,9 +30,7 @@ cd $LIBRARY
 
 #make system directories to install for cross-compiling later on.
 
-mkdir linux
-mkdir windows
-mkdir macosx
+mkdir ${SYSTEM}
 
 echo "Downloading LibAV"
 git clone git://git.libav.org/libav.git
@@ -42,21 +41,20 @@ wget http://kcat.strangesoft.net/openal-releases/openal-soft-1.16.0.tar.bz2
 echo "Downloading SDL2."
 wget https://www.libsdl.org/release/SDL2-2.0.3.zip
 
-#unzip SDL2-2.0.3.zip
-#./SDL2-2.0.3/configure
-#make
-#make install --prefix=$INSTALL_PREFIX 
-#make clean
-#rm config.log
-#rm config.status
-#rm libtool
-#rm Makefile
-#rm Makefile.rules
-#rm sdl2.pc
-#rm sdl2-config
-#rm SDL2.spec
-#rm SDL2-2.0.3.zip
+#========================================================================
+#
+# Installing libraries
+#
+#========================================================================
 
+#Installing SDL2-2.0.3
+
+#unzip SDL2-2.0.3.zip
+#mkdir temp
+#cd temp
+#./../SDL2-2.0.3/configure --prefix=$INSTALL_LIBRARY
+#make
+#make install
 
 
 
