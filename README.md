@@ -69,6 +69,8 @@ start new terminal as your normal user and run the following
 	./first_install.sh
 
 This script is going to clone create the Open-BFG-Tech directory in your home directory and clone the Open-BFG-Tech-SDK, Open-BFG-Engine and Open-BFG-Editor from github. Cloning the github allows you to easily update the source code later on as bugfixes are made by the community even if you aren't a programmer thanks to a script included in Open-BFG-Tech-SDK.
+	
+	update_from_git.sh
 
 Step 4.
 The first_install.sh askes you if you want to install the dependencies during the first install. 
@@ -80,6 +82,5 @@ If you choose not to do it at that time please run install_libraries.sh
 	./install_libraries.sh 
 
 Step 5.
-
-	Currently this is all that is done. I (darkhemic) am continuing to work on the script for all the needed dependencies for building and linking them to /lib/linux inside the Open-BFG-Tech folder to build the engine without breaking anything inside the project which right now is a direct fork with no code changes of RBDoom-3-BFG.
+Currently this is all that is done. I (darkhemic) am continuing to work on the script for all the needed dependencies for building and linking them to /lib/linux inside the Open-BFG-Tech folder to build the engine without breaking anything inside the project which right now is a direct fork with no code changes of RBDoom-3-BFG.
  
